@@ -3,7 +3,8 @@
     height: 150px;
     background: rgb(2,0,36);
     background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(54,54,117,1) 48%, rgba(0,212,255,1) 100%);
-    border-radius: 47% 53% 55% 45% / 26% 17% 83% 74% 
+    border-radius: 47% 53% 55% 45% / 26% 17% 83% 74%;
+    transition: 0.3s ease-in;
 }
 
 .container {
@@ -13,12 +14,34 @@
     box-shadow: -1px 10px 38px 4px rgba(0,212,255,0.3);
     -webkit-box-shadow: -1px 10px 38px 4px rgba(0,212,255,0.3);
     -moz-box-shadow: -1px 10px 38px 4px rgba(0,212,255,0.3);
+    overflow: hidden;
+}
+
+.img-container {
+    height: 100%;
+    width: 100%;
+    background-image: url(../../../assets/Images/tree.jpg);
+    background-size: cover;
+}
+
+.customCss {
+    border-bottom: 20px solid white;
 }
 
 @keyframes blobShape {
-    0%   {border-radius: 47% 53% 55% 45% / 26% 17% 83% 74% }
-    25%  {border-radius: 47% 53% 55% 45% / 38% 38% 62% 62% }
-    50%  {border-radius: 47% 53% 35% 65% / 38% 59% 41% 62% }
-    75%  {border-radius: 47% 53% 35% 65% / 66% 26% 74% 34% }
-    100% {border-radius: 85% 15% 35% 65% / 66% 71% 29% 34% }
+    0%   {
+        border-radius: 47% 53% 55% 45% / 26% 17% 83% 74%;
+    }
+    25%  {
+        border-radius: 47% 53% 55% 45% / 38% 38% 62% 62%;
+    }
+    50%  {
+        border-radius: 47% 53% 35% 65% / 38% 59% 41% 62%;
+    }
+    75%  {
+        border-radius: 47% 53% 35% 65% / 66% 26% 74% 34%;
+    }
+    100% {
+        border-radius: 85% 15% 35% 65% / 66% 71% 29% 34%;
+    }
 }
