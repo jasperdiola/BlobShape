@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="box sigin">
+        <h2>Already Have an Account ?</h2>
+        <button class="signInBtn" (click)="onclickSignIn()">Sign in</button>
+    </div>
+    <div class="box signup">
+        <h2>Don't Have an Account ?</h2>
+        <button class="signUpBtn" (click)="onclickSignUp()">Sign up</button>
+    </div>
+    <div #formBx class="formBx">
+        <div #signinform class="form signinform">
+            <form action="">
+                <h3>Sign In</h3>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Login">
+                <a href="#" class="forgot">Forgot Password</a>
+            </form>
+        </div>
+
+        <div #signupform class="form signupform">
+            <form action="">
+                <h3>Sign Up</h3>
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+</div>
